@@ -1,67 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>About Me</title> 
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<h1>Keegan Lange</h1>
-<h2>Aspiring Software Developer</h2>
-<hr>
-<p1>Hello! My name is Keegan Lange. I am a second year student at NAU, majoring in Computer Science. I have been programming since High School, and have really enjoyed it. I am interested in music, I play piano, I am creative, and I am interning at a company for data analytics! For this course in particular, I am going to be very vigilant about using AI as a learning tool more then a crutch. I have noted in the last year a gross reliance on AI, and I feel like there has been a regression in my ability to write code without it. Besides that, I am excited for this course! </p1>
-<hr>
-<h2 id="education">Education</h2>
-  <table border="1" cellpadding="6">
-    <tr><th>Institution</th><th>Degree/Program</th><th>Duration</th></tr>
-    <tr><td>Northern Arizona University</td><td>B.S. Computer Science</td><td>Aug 2024 – May 2028</td></tr>
-  </table>
 
-  <h2 id="experience">Experience</h2>
-  <table border="1" cellpadding="6">
-    <tr><th>Company</th><th>Role</th><th>Duration</th></tr>
-    <tr><td>GCON</td><td>Data Intern/IT</td><td>May 2024 – Present</td></tr>
-  </table>
+
+<body>
+  <div class="layout">
+    <header>
+      <h1>Keegan Lange</h1>
+      <h2>Aspiring Software Developer</h2>
+    </header>
+
+    <aside>
+      <nav class="nav">
+        <a href="#summary">Summary</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+
+        <div class="resume-wrap">
+          <a class="resume-btn" href="assets/Resume.png" download>Download Resume</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>Hello! My name is Keegan Lange. I am a second year student at NAU, majoring in Computer Science. I have been programming since High School, and have really enjoyed it. I am interested in music, I play piano, I am creative, and I am interning at a company for data analytics! For this course in particular, I am going to be very vigilant about using AI as a learning tool more than a crutch. I have noted in the last year a gross reliance on AI, and I feel like there has been a regression in my ability to write code without it. Besides that, I am excited for this course!</p>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <table>
+          <thead>
+            <tr><th>Institution</th><th>Degree/Program</th><th>Duration</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Northern Arizona University</td><td>B.S. Computer Science</td><td>Aug 2024 – May 2028</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <table>
+          <thead>
+            <tr><th>Company</th><th>Role</th><th>Duration</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>GCON</td><td>Data Intern/IT</td><td>May 2024 – Present</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="skills">
+        <h2>Programming Languages</h2>
+        <ul class="skills-list">
+          <li>SQL</li><li>Python</li><li>Assembly (MIPS)</li><li>Java</li>
+          <li>Javascript</li><li>HTML</li><li>CSS</li><li>C</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <h3>Polyrhythm Visualizer</h3>
+          <p>Used JS, HTML, and CSS to plot concurrent rhythms on a circle and show sync points.</p>
+          <img src="images/Visualizer.png" width="400" alt="Polyrhythm Visualizer screenshot">
+        </article>
+
+        <article class="project">
+          <h3>2D Web Game</h3>
+          <p>ARG.io-style movement; collect points on a map using CSS/JS/HTML.</p>
+          <img src="images/2D.png" width="400" alt="2D Web Game screenshot">
+        </article>
+
+        <article class="project">
+          <h3>Gantt Chart</h3>
+          <p>Plotted potential contracts and time spans for a construction company.</p>
+          <img src="images/GantChart.png" width="400" alt="Gantt chart screenshot">
+        </article>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p>Phone: 602-909-5128</p>
+      <p>
+        <a href="mailto:ksl273@nau.edu">ksl273@nau.edu</a> •
+        <a href="mailto:keegan4271@gmail.com">keegan4271@gmail.com</a> •
+        <a href="https://github.com/KeegWeeg" target="_blank" rel="noopener">github.com/KeegWeeg</a>
+      </p>
+    </footer>
+  </div>
 </body>
 
-  <h2>Programming Languages</h2>
-<ul>
-    <li>SQL</li>
-    <li>Python</li>
-    <li>Assembly (MIPS)</li>
-    <li>Java</li>
-    <li>Javascript</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>C</li>
-</ul>
 
-<hr>
-<h2>Projects</h2>
-<h3>Polyrhythm Visualizer</h3>
-<p1>Used JS, HTML, and CSS to make a little program where you enter in concurent rhythms and it plots them on a circle to show you where the beats were synced.</p1>
-  <br>
-  <img src="images/Visualizer.png" width="400">
-<h3>2D Web Game</h3>
-<p1>Made a little game with CSS, JS, and HTML, with an "ARG.IO" like movement system when you collect points around a blank map.</p1>
-  <br>
-  <img src="images/2D.png" width=400>
-<h3>Gant Chart</h3>
-<p1>A gant chart that plotted potential contracts and their time span for a construction company.</p1>
-  <br>
-  <img src="images/GantChart.png" width="400">
-<hr>
-
-  <h2>Contact</h2>
-<ul>
-<li>Phone: 6029095128</li>
-<li><a href="mailto:ksl273@nau.edu">ksl273@nau.edu</a>
-</li>
-<li><a href="mailto:keegan4271@gmail.com">keegan4271@gmail.com</a></li>
-<li><a href="https://github.com/KeegWeeg" target="_blank">github.com/KeegWeeg</a>
-</li></li>
-</ul>
-<a href="assets/Resume.png" download="download-btn">Download Resume (PNG)</a>
 
 
 
